@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="libs/css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="libs/img/logo_icon.png" type="image/x-icon">
+
+    <title>Our Blog</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <section class="sub-header">
+        <!-- Navbar Start -->
+        <nav class="navbar">
+            <a class="navbar-logo" href="index.html"><img src="libs/img/logo.png" alt="Navbar-logo"></a>
+
+            <div class="navbar-links" id="navbarLinks">
+                <i class="icons" data-feather="x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="icons" data-feather="menu" onclick="showMenu()"></i>
+        </nav>
+        <!-- Navbar End -->
+        <h1>Our Certificate & Online Program From 2023</h1>
+    </section>
+    <!-- Header End -->
+
+    <!-- Blog Page -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="libs/img/certificate.jpg" alt="" srcset="">
+                <h2>Our Certificate & Online Program From 2023</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatibus omnis enim harum
+                    impedit esse, tenetur expedita fuga assumenda labore odio et ea deserunt ad error dolor temporibus
+                    libero commodi quae accusantium exercitationem minus sapiente quisquam itaque! Aliquam doloribus
+                    debitis voluptate, doloremque blanditiis aut excepturi nostrum nemo minima in repudiandae!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est eos voluptatum excepturi
+                    blanditiis distinctio culpa, incidunt enim alias nemo, fuga magni, repudiandae quae. Excepturi qui
+                    laboriosam, aut fugit quam ex dolorem, quaerat ea necessitatibus, recusandae beatae consequatur rem
+                    ab!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor dolorum molestias non explicabo
+                    rerum iste eum voluptas voluptates exercitationem, reiciendis esse voluptatem facilis nam nobis
+                    unde, assumenda iusto asperiores nesciunt iure distinctio ex tempora omnis expedita. Magnam, ipsam
+                    facilis!</p>
+
+                <div class="comment-box">
+                    <h2>Leave a comment</h2>
+
+                    <form class="comment-form" action="">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Mail">
+                        <textarea name="" id="" rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn btn-danger">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Scientist</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Design Graphic</span>
+                    <span>20</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, omnis! Eaque officia dolor, repellat nemo
+            vero est neque commodi magni! <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, sit.</p>
+
+        <div class="icon">
+            <i class="icons fa-brands fa-facebook"></i>
+            <i class="icons fa-brands fa-instagram"></i>
+            <i class="icons fa-brands fa-twitter"></i>
+            <i class="icons fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="heart fa-solid fa-heart"></i> by This codeprogamming </p>
+    </section>
+
+
+    <!-- My Javascript -->
+    <script>
+        let navbarLinks = document.querySelector("#navbarLinks")
+
+        function showMenu() {
+            navbarLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navbarLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <!-- Feather Icons Script -->
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
